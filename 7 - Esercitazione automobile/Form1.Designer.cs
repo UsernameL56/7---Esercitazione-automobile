@@ -33,7 +33,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.prima = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.seconda = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -81,58 +81,67 @@
             // 
             // prima
             // 
+            this.prima.BackColor = System.Drawing.Color.White;
             this.prima.Location = new System.Drawing.Point(877, 384);
             this.prima.Name = "prima";
             this.prima.Size = new System.Drawing.Size(62, 60);
             this.prima.TabIndex = 4;
             this.prima.Text = "1";
-            this.prima.UseVisualStyleBackColor = true;
+            this.prima.UseVisualStyleBackColor = false;
             this.prima.Click += new System.EventHandler(this.prima_Click);
+            this.prima.MouseClick += new System.Windows.Forms.MouseEventHandler(this.prima_MouseClick);
             // 
-            // button4
+            // seconda
             // 
-            this.button4.Location = new System.Drawing.Point(945, 384);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(62, 60);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "2";
-            this.button4.UseVisualStyleBackColor = true;
+            this.seconda.BackColor = System.Drawing.Color.White;
+            this.seconda.Location = new System.Drawing.Point(945, 384);
+            this.seconda.Name = "seconda";
+            this.seconda.Size = new System.Drawing.Size(62, 60);
+            this.seconda.TabIndex = 5;
+            this.seconda.Text = "2";
+            this.seconda.UseVisualStyleBackColor = false;
+            this.seconda.Click += new System.EventHandler(this.seconda_Click);
+            this.seconda.MouseClick += new System.Windows.Forms.MouseEventHandler(this.seconda_MouseClick);
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(1013, 384);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(62, 60);
             this.button5.TabIndex = 6;
             this.button5.Text = "3";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(1081, 384);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(62, 60);
             this.button6.TabIndex = 7;
             this.button6.Text = "4";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.Color.White;
             this.button7.Location = new System.Drawing.Point(1149, 384);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(62, 60);
             this.button7.TabIndex = 8;
             this.button7.Text = "5";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             // 
             // button8
             // 
+            this.button8.BackColor = System.Drawing.Color.White;
             this.button8.Location = new System.Drawing.Point(1217, 384);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(62, 60);
             this.button8.TabIndex = 9;
             this.button8.Text = "6";
-            this.button8.UseVisualStyleBackColor = true;
+            this.button8.UseVisualStyleBackColor = false;
             // 
             // statoAccensione
             // 
@@ -152,7 +161,7 @@
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.seconda);
             this.Controls.Add(this.prima);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.button3);
@@ -173,7 +182,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button prima;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button seconda;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;

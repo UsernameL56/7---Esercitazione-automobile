@@ -38,6 +38,10 @@ namespace _7___Esercitazione_automobile
         {
             auto.marciaAuto(1);
         }
+        private void seconda_Click(object sender, EventArgs e)
+        {
+            auto.marciaAuto(2);
+        }
 
         private void accensione_Click(object sender, EventArgs e)
         {
@@ -45,9 +49,33 @@ namespace _7___Esercitazione_automobile
             if (stato == 1)
                 statoAccensione.Text = "STATO: Acceso";
             else
+            {
                 statoAccensione.Text = "STATO: Spento";
 
+                while (auto.Velocita != 0)
+                {
+                    auto.Velocita -= 5;
+                    Thread.Sleep(500);
+                    listView1.Clear();
+                    listView1.Items.Add(Convert.ToString(auto.Velocita));
+                }
+               
+            }
+                
 
+
+        }
+
+        private void prima_MouseClick(object sender, MouseEventArgs e)
+        {
+            prima.BackColor = Color.Green;
+            seconda.BackColor = Color.White;
+        }
+
+        private void seconda_MouseClick(object sender, MouseEventArgs e)
+        {
+            prima.BackColor = Color.White;
+            seconda.BackColor = Color.Green;
         }
     }
 
@@ -91,13 +119,7 @@ namespace _7___Esercitazione_automobile
                 return _accensione = 1;
             else
             {
-                while (_velocita != 0)
-                {
-                    _velocita -= 5;
-                    Thread.Sleep(500);
-                }
                 return _accensione = 0;
-                
             }
         }
 
@@ -107,6 +129,8 @@ namespace _7___Esercitazione_automobile
                 _marcia = cambio;
             else if (_marcia - 1 == cambio)
                 _marcia = cambio;
+            else
+                _marcia = _marcia;
         }
         public void Accelerazione()
         {
@@ -114,7 +138,7 @@ namespace _7___Esercitazione_automobile
             {
                 if (_marcia == 1 && _velocita < 30)
                     _velocita += 5;
-                else if (_marcia == 2 && _velocita < 60)
+                else if (_marcia == 2 &&  _velocita>=30 && _velocita < 60)
                     _velocita += 5;
                 else if (_marcia == 3 && _velocita < 70)
                     _velocita += 5;
