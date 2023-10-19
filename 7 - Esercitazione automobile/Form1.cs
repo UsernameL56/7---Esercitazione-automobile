@@ -20,6 +20,7 @@ namespace _7___Esercitazione_automobile
         {
             InitializeComponent();
             auto = new Automobile();
+            listView1.Items.Add(Convert.ToString(auto.Velocita));
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -33,15 +34,14 @@ namespace _7___Esercitazione_automobile
             listView1.Clear();
             listView1.Items.Add(Convert.ToString(auto.Velocita));
         }
+        private void Decelerazione_Click(object sender, EventArgs e)
+        {
+            auto.Decelerazione();
+            listView1.Clear();
+            listView1.Items.Add(Convert.ToString(auto.Velocita));
+        }
 
-        private void prima_Click(object sender, EventArgs e)
-        {
-            auto.marciaAuto(1);
-        }
-        private void seconda_Click(object sender, EventArgs e)
-        {
-            auto.marciaAuto(2);
-        }
+
 
         private void accensione_Click(object sender, EventArgs e)
         {
@@ -51,21 +51,24 @@ namespace _7___Esercitazione_automobile
             else
             {
                 statoAccensione.Text = "STATO: Spento";
-
-                while (auto.Velocita != 0)
-                {
-                    auto.Velocita -= 5;
-                    Thread.Sleep(500);
-                    listView1.Clear();
-                    listView1.Items.Add(Convert.ToString(auto.Velocita));
-                }
-               
             }
                 
 
 
         }
 
+        private void prima_Click(object sender, EventArgs e)
+        {
+            auto.marciaAuto(1);
+        }
+        private void seconda_Click(object sender, EventArgs e)
+        {
+            auto.marciaAuto(2);
+        }
+        private void folle_Click(object sender, EventArgs e)
+        {
+            auto.marciaAuto(0);
+        }
         private void prima_MouseClick(object sender, MouseEventArgs e)
         {
             prima.BackColor = Color.Green;
@@ -76,6 +79,13 @@ namespace _7___Esercitazione_automobile
         {
             prima.BackColor = Color.White;
             seconda.BackColor = Color.Green;
+        }
+
+        private void folle_MouseClick(object sender, MouseEventArgs e)
+        {
+            prima.BackColor = Color.White;
+            folle.BackColor = Color.Green;
+            seconda.BackColor = Color.White;
         }
     }
 
@@ -103,7 +113,8 @@ namespace _7___Esercitazione_automobile
         public int Marcia
         {
             get { return _marcia; }
-            set { _marcia = value; }
+            set { if(value >=0 && value<=6)
+                    _marcia = value; }
         }
         public int Accensione
         {
@@ -117,10 +128,11 @@ namespace _7___Esercitazione_automobile
         {
             if (_accensione == 0 && _velocita == 0)
                 return _accensione = 1;
-            else
+            else if(_velocita == 0  && _marcia == 0)
             {
                 return _accensione = 0;
-            }
+            }else
+                return _accensione;
         }
 
         public void marciaAuto(int cambio)

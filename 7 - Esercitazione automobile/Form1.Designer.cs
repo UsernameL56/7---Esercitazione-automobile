@@ -30,7 +30,7 @@
         {
             this.accensione = new System.Windows.Forms.Button();
             this.Accelerazione = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Decelerazione = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.prima = new System.Windows.Forms.Button();
             this.seconda = new System.Windows.Forms.Button();
@@ -39,6 +39,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.statoAccensione = new System.Windows.Forms.Label();
+            this.folle = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // accensione
@@ -61,14 +62,15 @@
             this.Accelerazione.UseVisualStyleBackColor = true;
             this.Accelerazione.Click += new System.EventHandler(this.Accelerazione_Click);
             // 
-            // button3
+            // Decelerazione
             // 
-            this.button3.Location = new System.Drawing.Point(557, 354);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(89, 190);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Decelerazione";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Decelerazione.Location = new System.Drawing.Point(557, 354);
+            this.Decelerazione.Name = "Decelerazione";
+            this.Decelerazione.Size = new System.Drawing.Size(89, 190);
+            this.Decelerazione.TabIndex = 2;
+            this.Decelerazione.Text = "Decelerazione";
+            this.Decelerazione.UseVisualStyleBackColor = true;
+            this.Decelerazione.Click += new System.EventHandler(this.Decelerazione_Click);
             // 
             // listView1
             // 
@@ -82,7 +84,7 @@
             // prima
             // 
             this.prima.BackColor = System.Drawing.Color.White;
-            this.prima.Location = new System.Drawing.Point(877, 384);
+            this.prima.Location = new System.Drawing.Point(809, 384);
             this.prima.Name = "prima";
             this.prima.Size = new System.Drawing.Size(62, 60);
             this.prima.TabIndex = 4;
@@ -151,11 +153,24 @@
             this.statoAccensione.Size = new System.Drawing.Size(0, 13);
             this.statoAccensione.TabIndex = 10;
             // 
+            // folle
+            // 
+            this.folle.BackColor = System.Drawing.Color.White;
+            this.folle.Location = new System.Drawing.Point(877, 384);
+            this.folle.Name = "folle";
+            this.folle.Size = new System.Drawing.Size(62, 60);
+            this.folle.TabIndex = 11;
+            this.folle.Text = "N";
+            this.folle.UseVisualStyleBackColor = false;
+            this.folle.Click += new System.EventHandler(this.folle_Click);
+            this.folle.MouseClick += new System.Windows.Forms.MouseEventHandler(this.folle_MouseClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1308, 678);
+            this.Controls.Add(this.folle);
             this.Controls.Add(this.statoAccensione);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -164,7 +179,7 @@
             this.Controls.Add(this.seconda);
             this.Controls.Add(this.prima);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Decelerazione);
             this.Controls.Add(this.Accelerazione);
             this.Controls.Add(this.accensione);
             this.Name = "Form1";
@@ -179,7 +194,7 @@
 
         private System.Windows.Forms.Button accensione;
         private System.Windows.Forms.Button Accelerazione;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Decelerazione;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button prima;
         private System.Windows.Forms.Button seconda;
@@ -188,6 +203,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label statoAccensione;
+        private System.Windows.Forms.Button folle;
     }
 }
 
