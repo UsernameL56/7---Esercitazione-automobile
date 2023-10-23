@@ -19,6 +19,7 @@ namespace _7___Esercitazione_automobile
     {
         
         public static UserControlManuale manuale;
+        public static UserControlAutomatico automatico;
         public static Panel Panel1;
 
         public Form1()
@@ -26,6 +27,7 @@ namespace _7___Esercitazione_automobile
             InitializeComponent();
             
             manuale = new UserControlManuale();
+            automatico = new UserControlAutomatico();
             Panel1 = panel1;
         }
 

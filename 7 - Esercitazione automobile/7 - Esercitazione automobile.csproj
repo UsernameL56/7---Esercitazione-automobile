@@ -57,6 +57,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user\UserControlAutomatico.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user\UserControlAutomatico.Designer.cs">
+      <DependentUpon>UserControlAutomatico.cs</DependentUpon>
+    </Compile>
     <Compile Include="user\UserControlManuale.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -75,6 +81,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="user\UserControlAutomatico.resx">
+      <DependentUpon>UserControlAutomatico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="user\UserControlManuale.resx">
       <DependentUpon>UserControlManuale.cs</DependentUpon>
     </EmbeddedResource>

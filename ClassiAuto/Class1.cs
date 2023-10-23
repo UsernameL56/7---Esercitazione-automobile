@@ -60,7 +60,7 @@ namespace ClassiAuto
                 return -1;
         }
 
-        public int marciaAuto(int cambio)
+        public virtual int marciaAuto(int cambio)
         {
             if (_marcia == 0 && cambio == 1)
                 _marcia = cambio;
@@ -123,13 +123,13 @@ namespace ClassiAuto
             Marcia = 0;
             Accensione = 0;
         }
-        public int marciaAuto()
+        public override int marciaAuto(int val)
         {
-            if (_accensione == 1)
+            if (_accensione == 1 && _velocita == 0 && _marcia == 0)
                 _marcia = 1;
-            else if (_velocita >= (30 + 20 * (_marcia - 1)))
+            else if (_velocita == (30 + 20 * (_marcia - 1)) && _velocita < 130 && val == 1)
                 _marcia++;
-            else if (_velocita <= (30 + 20 * (_marcia - 2)))
+            else if (_velocita == (30 + 20 * Math.Abs(_marcia - 2)) && val == 0)
                 _marcia--;
             else if (_marcia == 1 && _velocita == 0)
                 _marcia = 0;

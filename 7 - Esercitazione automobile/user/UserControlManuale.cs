@@ -176,7 +176,7 @@ namespace _7___Esercitazione_automobile.user
        
         private void manuale_Click(object sender, EventArgs e)
         {
-            addUserControl(Form1.Panel1, Form1.manuale);
+            addUserControl(Form1.Panel1, Form1.automatico);
         }
         public static void addUserControl(Panel panel1, UserControl userControl)
         {
