@@ -35,16 +35,16 @@
             this.accensione = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.automatico = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // statoAccensione
             // 
             this.statoAccensione.AutoSize = true;
             this.statoAccensione.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statoAccensione.Location = new System.Drawing.Point(100, 198);
-            this.statoAccensione.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.statoAccensione.Location = new System.Drawing.Point(75, 161);
             this.statoAccensione.Name = "statoAccensione";
-            this.statoAccensione.Size = new System.Drawing.Size(100, 29);
+            this.statoAccensione.Size = new System.Drawing.Size(79, 24);
             this.statoAccensione.TabIndex = 41;
             this.statoAccensione.Text = "STATO";
             // 
@@ -52,20 +52,18 @@
             // 
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(510, 33);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4);
+            this.listView1.Location = new System.Drawing.Point(371, 74);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(435, 103);
+            this.listView1.Size = new System.Drawing.Size(327, 84);
             this.listView1.TabIndex = 40;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.List;
             // 
             // Decelerazione
             // 
-            this.Decelerazione.Location = new System.Drawing.Point(576, 317);
-            this.Decelerazione.Margin = new System.Windows.Forms.Padding(4);
+            this.Decelerazione.Location = new System.Drawing.Point(432, 258);
             this.Decelerazione.Name = "Decelerazione";
-            this.Decelerazione.Size = new System.Drawing.Size(104, 226);
+            this.Decelerazione.Size = new System.Drawing.Size(78, 184);
             this.Decelerazione.TabIndex = 39;
             this.Decelerazione.Text = "Decelerazione";
             this.Decelerazione.UseVisualStyleBackColor = true;
@@ -73,10 +71,9 @@
             // 
             // Accelerazione
             // 
-            this.Accelerazione.Location = new System.Drawing.Point(714, 317);
-            this.Accelerazione.Margin = new System.Windows.Forms.Padding(4);
+            this.Accelerazione.Location = new System.Drawing.Point(536, 258);
             this.Accelerazione.Name = "Accelerazione";
-            this.Accelerazione.Size = new System.Drawing.Size(104, 226);
+            this.Accelerazione.Size = new System.Drawing.Size(78, 184);
             this.Accelerazione.TabIndex = 38;
             this.Accelerazione.Text = "Accelerazione";
             this.Accelerazione.UseVisualStyleBackColor = true;
@@ -85,10 +82,9 @@
             // accensione
             // 
             this.accensione.BackColor = System.Drawing.Color.Red;
-            this.accensione.Location = new System.Drawing.Point(135, 231);
-            this.accensione.Margin = new System.Windows.Forms.Padding(4);
+            this.accensione.Location = new System.Drawing.Point(101, 188);
             this.accensione.Name = "accensione";
-            this.accensione.Size = new System.Drawing.Size(120, 109);
+            this.accensione.Size = new System.Drawing.Size(90, 89);
             this.accensione.TabIndex = 37;
             this.accensione.Text = "Accensione";
             this.accensione.UseVisualStyleBackColor = false;
@@ -98,27 +94,38 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(963, 412);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(714, 318);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 29);
+            this.label1.Size = new System.Drawing.Size(89, 24);
             this.label1.TabIndex = 42;
-            this.label1.Text = "MARCIA";
+            this.label1.Text = "MARCE:";
             // 
             // automatico
             // 
-            this.automatico.Location = new System.Drawing.Point(21, 19);
+            this.automatico.Location = new System.Drawing.Point(16, 15);
+            this.automatico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.automatico.Name = "automatico";
-            this.automatico.Size = new System.Drawing.Size(127, 81);
+            this.automatico.Size = new System.Drawing.Size(95, 66);
             this.automatico.TabIndex = 43;
-            this.automatico.Text = "AUTOMATICO";
+            this.automatico.Text = "MANUALE";
             this.automatico.UseVisualStyleBackColor = true;
             this.automatico.Click += new System.EventHandler(this.automatico_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(367, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(294, 24);
+            this.label2.TabIndex = 44;
+            this.label2.Text = "AUTO CAMBIO AUTOMATICO";
+            // 
             // UserControlAutomatico
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.automatico);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.statoAccensione);
@@ -126,8 +133,9 @@
             this.Controls.Add(this.Decelerazione);
             this.Controls.Add(this.Accelerazione);
             this.Controls.Add(this.accensione);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserControlAutomatico";
-            this.Size = new System.Drawing.Size(1437, 603);
+            this.Size = new System.Drawing.Size(1078, 490);
             this.Load += new System.EventHandler(this.UserControlAutomatico_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -143,5 +151,6 @@
         private System.Windows.Forms.Button accensione;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button automatico;
+        private System.Windows.Forms.Label label2;
     }
 }

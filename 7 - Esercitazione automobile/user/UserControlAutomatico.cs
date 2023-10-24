@@ -33,7 +33,7 @@ namespace _7___Esercitazione_automobile.user
             autoAuto.Accelerazione();
             listView1.Clear();
             listView1.Items.Add(Convert.ToString(autoAuto.Velocita));
-            label1.Text = Convert.ToString(autoAuto.Marcia);
+            label1.Text = "MARCIA: " + Convert.ToString(autoAuto.Marcia);
         }
 
         private void Decelerazione_Click(object sender, EventArgs e)
@@ -42,7 +42,7 @@ namespace _7___Esercitazione_automobile.user
             autoAuto.Decelerazione();
             listView1.Clear();
             listView1.Items.Add(Convert.ToString(autoAuto.Velocita));
-            label1.Text = Convert.ToString(autoAuto.Marcia);
+            label1.Text = "MARCIA: " + Convert.ToString(autoAuto.Marcia);
         }
 
         private void accensione_Click(object sender, EventArgs e)

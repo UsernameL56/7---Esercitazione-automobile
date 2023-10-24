@@ -42,25 +42,26 @@
             this.Accelerazione = new System.Windows.Forms.Button();
             this.accensione = new System.Windows.Forms.Button();
             this.manuale = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1107, 281);
+            this.label1.Location = new System.Drawing.Point(830, 228);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 29);
+            this.label1.Size = new System.Drawing.Size(83, 24);
             this.label1.TabIndex = 38;
             this.label1.Text = "MARCE";
             // 
             // folle
             // 
             this.folle.BackColor = System.Drawing.Color.Green;
-            this.folle.Location = new System.Drawing.Point(1065, 331);
-            this.folle.Margin = new System.Windows.Forms.Padding(4);
+            this.folle.Location = new System.Drawing.Point(799, 269);
             this.folle.Name = "folle";
-            this.folle.Size = new System.Drawing.Size(68, 66);
+            this.folle.Size = new System.Drawing.Size(51, 54);
             this.folle.TabIndex = 37;
             this.folle.Text = "N";
             this.folle.UseVisualStyleBackColor = false;
@@ -70,20 +71,18 @@
             // 
             this.statoAccensione.AutoSize = true;
             this.statoAccensione.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statoAccensione.Location = new System.Drawing.Point(121, 212);
-            this.statoAccensione.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.statoAccensione.Location = new System.Drawing.Point(91, 172);
             this.statoAccensione.Name = "statoAccensione";
-            this.statoAccensione.Size = new System.Drawing.Size(100, 29);
+            this.statoAccensione.Size = new System.Drawing.Size(79, 24);
             this.statoAccensione.TabIndex = 36;
             this.statoAccensione.Text = "STATO";
             // 
             // sesta
             // 
             this.sesta.BackColor = System.Drawing.Color.White;
-            this.sesta.Location = new System.Drawing.Point(1203, 425);
-            this.sesta.Margin = new System.Windows.Forms.Padding(4);
+            this.sesta.Location = new System.Drawing.Point(902, 345);
             this.sesta.Name = "sesta";
-            this.sesta.Size = new System.Drawing.Size(68, 66);
+            this.sesta.Size = new System.Drawing.Size(51, 54);
             this.sesta.TabIndex = 35;
             this.sesta.Text = "6";
             this.sesta.UseVisualStyleBackColor = false;
@@ -92,10 +91,9 @@
             // quinta
             // 
             this.quinta.BackColor = System.Drawing.Color.White;
-            this.quinta.Location = new System.Drawing.Point(1112, 425);
-            this.quinta.Margin = new System.Windows.Forms.Padding(4);
+            this.quinta.Location = new System.Drawing.Point(834, 345);
             this.quinta.Name = "quinta";
-            this.quinta.Size = new System.Drawing.Size(68, 66);
+            this.quinta.Size = new System.Drawing.Size(51, 54);
             this.quinta.TabIndex = 34;
             this.quinta.Text = "5";
             this.quinta.UseVisualStyleBackColor = false;
@@ -104,10 +102,9 @@
             // quarta
             // 
             this.quarta.BackColor = System.Drawing.Color.White;
-            this.quarta.Location = new System.Drawing.Point(1021, 425);
-            this.quarta.Margin = new System.Windows.Forms.Padding(4);
+            this.quarta.Location = new System.Drawing.Point(766, 345);
             this.quarta.Name = "quarta";
-            this.quarta.Size = new System.Drawing.Size(68, 66);
+            this.quarta.Size = new System.Drawing.Size(51, 54);
             this.quarta.TabIndex = 33;
             this.quarta.Text = "4";
             this.quarta.UseVisualStyleBackColor = false;
@@ -116,10 +113,9 @@
             // terza
             // 
             this.terza.BackColor = System.Drawing.Color.White;
-            this.terza.Location = new System.Drawing.Point(1247, 331);
-            this.terza.Margin = new System.Windows.Forms.Padding(4);
+            this.terza.Location = new System.Drawing.Point(935, 269);
             this.terza.Name = "terza";
-            this.terza.Size = new System.Drawing.Size(68, 66);
+            this.terza.Size = new System.Drawing.Size(51, 54);
             this.terza.TabIndex = 32;
             this.terza.Text = "3";
             this.terza.UseVisualStyleBackColor = false;
@@ -128,10 +124,9 @@
             // seconda
             // 
             this.seconda.BackColor = System.Drawing.Color.White;
-            this.seconda.Location = new System.Drawing.Point(1156, 331);
-            this.seconda.Margin = new System.Windows.Forms.Padding(4);
+            this.seconda.Location = new System.Drawing.Point(867, 269);
             this.seconda.Name = "seconda";
-            this.seconda.Size = new System.Drawing.Size(68, 66);
+            this.seconda.Size = new System.Drawing.Size(51, 54);
             this.seconda.TabIndex = 31;
             this.seconda.Text = "2";
             this.seconda.UseVisualStyleBackColor = false;
@@ -140,10 +135,9 @@
             // prima
             // 
             this.prima.BackColor = System.Drawing.Color.White;
-            this.prima.Location = new System.Drawing.Point(975, 331);
-            this.prima.Margin = new System.Windows.Forms.Padding(4);
+            this.prima.Location = new System.Drawing.Point(731, 269);
             this.prima.Name = "prima";
-            this.prima.Size = new System.Drawing.Size(68, 66);
+            this.prima.Size = new System.Drawing.Size(51, 54);
             this.prima.TabIndex = 30;
             this.prima.Text = "1";
             this.prima.UseVisualStyleBackColor = false;
@@ -153,19 +147,18 @@
             // 
             this.listView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(531, 47);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4);
+            this.listView1.Location = new System.Drawing.Point(383, 74);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(435, 103);
+            this.listView1.Size = new System.Drawing.Size(327, 84);
             this.listView1.TabIndex = 29;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
             // 
             // Decelerazione
             // 
-            this.Decelerazione.Location = new System.Drawing.Point(597, 331);
-            this.Decelerazione.Margin = new System.Windows.Forms.Padding(4);
+            this.Decelerazione.Location = new System.Drawing.Point(448, 269);
             this.Decelerazione.Name = "Decelerazione";
-            this.Decelerazione.Size = new System.Drawing.Size(104, 226);
+            this.Decelerazione.Size = new System.Drawing.Size(78, 184);
             this.Decelerazione.TabIndex = 28;
             this.Decelerazione.Text = "Decelerazione";
             this.Decelerazione.UseVisualStyleBackColor = true;
@@ -173,10 +166,9 @@
             // 
             // Accelerazione
             // 
-            this.Accelerazione.Location = new System.Drawing.Point(735, 331);
-            this.Accelerazione.Margin = new System.Windows.Forms.Padding(4);
+            this.Accelerazione.Location = new System.Drawing.Point(551, 269);
             this.Accelerazione.Name = "Accelerazione";
-            this.Accelerazione.Size = new System.Drawing.Size(104, 226);
+            this.Accelerazione.Size = new System.Drawing.Size(78, 184);
             this.Accelerazione.TabIndex = 27;
             this.Accelerazione.Text = "Accelerazione";
             this.Accelerazione.UseVisualStyleBackColor = true;
@@ -185,10 +177,9 @@
             // accensione
             // 
             this.accensione.BackColor = System.Drawing.Color.Red;
-            this.accensione.Location = new System.Drawing.Point(156, 245);
-            this.accensione.Margin = new System.Windows.Forms.Padding(4);
+            this.accensione.Location = new System.Drawing.Point(117, 199);
             this.accensione.Name = "accensione";
-            this.accensione.Size = new System.Drawing.Size(120, 109);
+            this.accensione.Size = new System.Drawing.Size(90, 89);
             this.accensione.TabIndex = 26;
             this.accensione.Text = "Accensione";
             this.accensione.UseVisualStyleBackColor = false;
@@ -196,18 +187,30 @@
             // 
             // manuale
             // 
-            this.manuale.Location = new System.Drawing.Point(13, 13);
+            this.manuale.Location = new System.Drawing.Point(16, 14);
+            this.manuale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.manuale.Name = "manuale";
-            this.manuale.Size = new System.Drawing.Size(97, 81);
+            this.manuale.Size = new System.Drawing.Size(95, 66);
             this.manuale.TabIndex = 39;
-            this.manuale.Text = "MANUALE";
+            this.manuale.Text = "AUTOMATICO";
             this.manuale.UseVisualStyleBackColor = true;
             this.manuale.Click += new System.EventHandler(this.manuale_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(379, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(257, 24);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "AUTO CAMBIO MANUALE";
+            // 
             // UserControlManuale
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.manuale);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.folle);
@@ -222,8 +225,9 @@
             this.Controls.Add(this.Decelerazione);
             this.Controls.Add(this.Accelerazione);
             this.Controls.Add(this.accensione);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserControlManuale";
-            this.Size = new System.Drawing.Size(1437, 603);
+            this.Size = new System.Drawing.Size(1078, 490);
             this.Load += new System.EventHandler(this.UserControlManuale_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -246,5 +250,6 @@
         private System.Windows.Forms.Button Accelerazione;
         private System.Windows.Forms.Button accensione;
         private System.Windows.Forms.Button manuale;
+        private System.Windows.Forms.Label label2;
     }
 }

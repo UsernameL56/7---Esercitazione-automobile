@@ -14,7 +14,7 @@ namespace _7___Esercitazione_automobile.user
     public partial class UserControlManuale : UserControl
     {
         Automobile auto;
-        int marcia, stato;
+        int marcia, stato, temp;
         public UserControlManuale()
         {
             InitializeComponent();
@@ -22,6 +22,7 @@ namespace _7___Esercitazione_automobile.user
             listView1.Items.Add(Convert.ToString(auto.Velocita));
             marcia = 0;
             stato = 0;
+            temp = 0;
         }
 
         private void UserControlManuale_Load(object sender, EventArgs e)
@@ -50,16 +51,22 @@ namespace _7___Esercitazione_automobile.user
         }
         private void Decelerazione_Click_1(object sender, EventArgs e)
         {
+            temp = auto.Velocita;
             auto.Decelerazione();
             listView1.Clear();
             listView1.Items.Add(Convert.ToString(auto.Velocita));
+            if (temp == auto.Velocita)
+                MessageBox.Show("Diminuire la marcia");
         }
 
         private void Accelerazione_Click_1(object sender, EventArgs e)
         {
+            temp = auto.Velocita;
             auto.Accelerazione();
             listView1.Clear();
             listView1.Items.Add(Convert.ToString(auto.Velocita));
+            if (temp == auto.Velocita)
+                MessageBox.Show("Aumentare la marcia");
         }
 
 
