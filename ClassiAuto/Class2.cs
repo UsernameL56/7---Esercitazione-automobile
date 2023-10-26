@@ -11,12 +11,19 @@ namespace ClassiAuto
     }
     public class AutomobileAutomatica : Automobile
     {
-        public AutomobileAutomatica()
+        public AutomobileAutomatica() : base()
         {
             Velocita = 0;
             Marcia = 0;
             Accensione = 0;
         }
+        
+        public AutomobileAutomatica(AutomobileAutomatica automaticaPrecedente) : base(automaticaPrecedente)
+        {
+            //Giri = automaticaPrecedente.Giri;
+        }
+
+
         public override int marciaAuto(int val)
         {
             if (_accensione == 1 && _velocita == 0 && _marcia == 0)

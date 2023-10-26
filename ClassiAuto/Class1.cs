@@ -24,6 +24,12 @@ namespace ClassiAuto
             Marcia = 0;
             Accensione = 0;
         }
+        public Automobile(Automobile manualePrecedente)
+        {
+            Velocita = manualePrecedente.Velocita;
+            Marcia = manualePrecedente.Marcia;
+            Accensione = manualePrecedente.Accensione;
+        }
 
         // metodi accessor
         public int Velocita
